@@ -1,0 +1,14 @@
+.footer {
+  background-color: black;
+}
+
+.footer h1 {
+  padding-top: 10px;
+  padding: 20px;
+  color: white;
+}
+
+.footer h4 {
+  padding: 20px;
+  color: white;
+}
