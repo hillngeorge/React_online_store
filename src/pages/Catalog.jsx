@@ -7,14 +7,14 @@ function Catalog() {
       title: "Tomatoes",
       price: "26.68",
       category: "fruit",
-      image: "img1.jpg",
+      image: "tom.jpg",
       _id: "1",
     },
     {
       title: "oranges",
       price: "26.68",
       category: "fruit",
-      image: "img1.jpg",
+      image: "sliced-orange.jpg",
       _id: "2",
     },
   ];
@@ -22,8 +22,9 @@ function Catalog() {
   return (
     <div className="catalog page">
       <h1>Our amazing catalog!!</h1>
-      <Product info={data[0]} />
-      <Product info={data[1]} />
+      {data.map((prod) => (
+        <Product key={prod.id} info={prod} />
+      ))}
     </div>
   );
 }
