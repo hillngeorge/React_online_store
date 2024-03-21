@@ -16,6 +16,7 @@
   margin: 0;
 }
 
-img {
-  height: 200px;
+.product img {
+  height: 230px;
+  width: 220px;
 }

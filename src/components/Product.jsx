@@ -12,7 +12,9 @@ function Product(props) {
       <h6>{props.info.title}</h6>
       <label>${props.info.price}</label>
 
-      <Quantity_picker />
+      <div className="controls">
+        <Quantity_picker />
+      </div>
 
       <button onClick={add} className="btn btn-sm btn-success">
         Add
